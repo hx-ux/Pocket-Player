@@ -1,0 +1,164 @@
+:root {
+    --main-bg-color:#282828;
+    --main-bg-color-light:#0c0032;
+    --main-blue-light:#3500D3;
+    --main-blue-dark:#240090;
+  }
+* 
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+   padding:0;
+    background-color:var(--main-bg-color);
+}
+
+.container-width {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.flex-sect {
+    padding: 10px 0;
+    font-family: Helvetica, serif;
+}
+
+.flex-title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+
+.headline
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    background-color: black;    
+    border-radius: 10px;
+}
+
+
+.label {
+    width: 100%;
+    display: block;
+}
+
+#iowoe {
+    text-decoration: none;
+    border-radius: 0 0 0 0;
+    border: 10px none black;
+}
+
+#ipsrg {
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.btn_stop
+{   width: 100%; 
+    height: 50px;   
+    border-radius: 10px;
+    background-color:var(--main-blue-light); 
+    font-size: 1em; 
+    color: whitesmoke;
+}
+
+.btn_play
+{   width: 100%; 
+    height: 40px;   
+    border-radius: 10px;
+    background-color:var(--main-blue-light);
+    font-size: 1em; 
+    color: whitesmoke;
+}
+
+.btn_stop:hover
+{     background-color:black; 
+}
+
+.btn_stop:click
+{     background-color:black; 
+}
+
+
+table {
+    width:100%;
+  }
+  td {
+    
+    color:whitesmoke;
+    overflow:hidden;
+    vertical-align:top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  th{
+      color:whitesmoke;
+      background-color: var(--main-blue-light);
+  }
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    #ipsrg {
+        max-width: 100%;
+        height: 100%;
+    }    
+    
+   
+   .btn_stop
+   {   width: 100%; 
+       height: 3em;       
+       border-radius: 10px;
+       color: whitesmoke;  
+       background-color:var(--main-blue-light);
+       font-size: 2em;
+   }
+
+
+.headline
+{
+    font-size: 0.8em;
+
+}
+   .flex-title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    color:whitesmoke;  
+  
+}
+.btn_play
+{   width: 100%; 
+    height: 100px;   
+    border-radius: 10px;
+    background-color:var(--main-blue-light);
+    font-size: 1em; 
+    color: whitesmoke;
+}
+
+
+
+}

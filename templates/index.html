@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VideoChan</title>
+</head>
+
+<body>
+	<br>
+	<br>
+	<section class="flex-sect" id="iiorb">
+		<div class="container-width">
+			<br>
+			<div class="flex-title" id="iowoe">Video-Player<br />
+				<br>
+
+				<a href="/stop"><button class="btn_stop">Stop</button></a>
+
+			</div>
+			<br>
+			<div class="headline">
+				<label class="label" id="icgdq">video playing : {{currV}}<label>
+			</div>
+
+			<br>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Play
+						</th>
+					</tr>
+				</thead>
+				<br>
+				<tbody>
+					
+					{%for i in range(0, len)%}					
+					<tr>
+						<td>{{index[i]}}</td>
+						<td>{{output_data[i]}}</td>
+						<td><a href=/video?video={{index[i]}}><button class="btn_play">Play Video</button> </a></td>
+					</tr>
+					{% endfor %}
+
+				</tbody>
+			</table>
+		</div>
+
+	</section>
+
+</body>
+
+</html>
