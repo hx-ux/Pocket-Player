@@ -20,7 +20,6 @@ def index_folder():
 
 def play_video(_name):
     global curVideo
-    print('video started')
     url = 'data/'+_name
     subprocess.Popen(['omxplayer', '-b', '--loop', url, '&'])
     curVideo = _name
