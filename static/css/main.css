@@ -3,15 +3,17 @@
     --main-bg-color-light:#0c0032;
     --main-blue-light:#3500D3;
     --main-blue-dark:#240090;
+    --main-font-light:var(--main-font-light);
   }
-* 
-{
+
+  * {
+
     box-sizing: border-box;
-}
+    }
 
 body {
     margin:0;
-   padding:0;
+    padding:0;
     background-color:var(--main-bg-color);
 }
 
@@ -30,7 +32,7 @@ body {
     font-size: 2em;
     text-align: center;
     font-weight: 700;
-    color: whitesmoke;
+    color: var(--main-font-light);
 }
 
 
@@ -42,7 +44,7 @@ body {
     font-size: 1.3em;
     height: 100%;
     width: 100%;
-    color: whitesmoke;
+    color: var(--main-font-light);
     background-color: black;    
     border-radius: 10px;
 }
@@ -77,7 +79,7 @@ body {
     border-radius: 10px;
     background-color:var(--main-blue-light); 
     font-size: 1em; 
-    color: whitesmoke;
+    color: var(--main-font-light);
 }
 
 .btn_play
@@ -86,7 +88,7 @@ body {
     border-radius: 10px;
     background-color:var(--main-blue-light);
     font-size: 1em; 
-    color: whitesmoke;
+    color: var(--main-font-light);
 }
 
 .btn_stop:hover
@@ -103,14 +105,14 @@ table {
   }
   td {
     
-    color:whitesmoke;
+    color:var(--main-font-light);
     overflow:hidden;
     vertical-align:top;
     padding-top: 10px;
     padding-bottom: 10px;
   }
   th{
-      color:whitesmoke;
+      color:var(--main-font-light);
       background-color: var(--main-blue-light);
   }
 
@@ -130,9 +132,9 @@ table {
    
    .btn_stop
    {   width: 100%; 
-       height: 3em;       
+       height: 2em;       
        border-radius: 10px;
-       color: whitesmoke;  
+       color: var(--main-font-light);
        background-color:var(--main-blue-light);
        font-size: 2em;
    }
@@ -141,13 +143,12 @@ table {
 .headline
 {
     font-size: 0.8em;
-
 }
    .flex-title {
     font-size: 1em;
     text-align: center;
     font-weight: 700;
-    color:whitesmoke;  
+    color:var(--main-font-light);
   
 }
 .btn_play
@@ -156,7 +157,7 @@ table {
     border-radius: 10px;
     background-color:var(--main-blue-light);
     font-size: 1em; 
-    color: whitesmoke;
+    color: var(--main-font-light);
 }
 
 
