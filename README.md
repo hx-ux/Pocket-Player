@@ -26,7 +26,7 @@ pip3 install flask
 python3 webserver.py
 ```
 ## Supported Formats
-...are support \
+mp4,avi,webm,mv4 files are supported \
 <b> please note, that audio via hdmi is enabled </b>
 
 ## License
