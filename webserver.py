@@ -1,21 +1,21 @@
-from flask import Flask, render_template, request
 import time
 import subprocess
 import os
 import glob
-
+from flask import Flask, render_template, request
 
 curVideo = 'none'
 
 
 def index_folder():
-    fileExt = ['.m4v','.mp4',]
+    fileExt = [".mp4", ".avi", ".m4v"]
     _files = []
     for b in fileExt:
         for file in os.listdir("data"):
-            if file.endswith(b):
-                _files.append(file)
-        return _files
+         if file.endswith(b):
+           _files.append(file)
+    print(_files)
+    return _files
 
 
 def play_video(_name):
@@ -28,7 +28,7 @@ def play_video(_name):
 
 def stop_video():
     global curVideo
-    subprocess.call(['killall', 'omxplayer.bin'])
+    subprocess.check_call(['killall', 'omxplayer.bin'])
     os.system('clear')
     curVideo = 'none'
     return curVideo
@@ -68,5 +68,6 @@ def ws_v_stop():
 if __name__ == '__main__':
 
     mylist = index_folder()
+    print(mylist)
     mylist_chs = index_folder_chs(mylist)
     app.run(debug=False, host='0.0.0.0')

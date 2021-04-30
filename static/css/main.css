@@ -3,7 +3,7 @@
     --main-bg-color-light:#0c0032;
     --main-blue-light:#3500D3;
     --main-blue-dark:#240090;
-    --main-font-light:var(--main-font-light);
+    --main-font-light:rgb(255, 255, 255);
   }
 
   * {
