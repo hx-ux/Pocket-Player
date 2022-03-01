@@ -8,7 +8,7 @@ curVideo = 'none'
 
 
 def index_folder():
-    fileExt = [".mp4", ".avi", ".m4v"]
+    fileExt = [".mp4", ".avi", ".m4v",".webm"]
     _files = []
     for b in fileExt:
         for file in os.listdir("data"):
